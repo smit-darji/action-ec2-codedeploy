@@ -36,3 +36,4 @@ jobs:
             echo "Run python file"
             pip install tabpy-client
             python3 ML.py
+
