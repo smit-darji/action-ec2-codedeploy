@@ -23,6 +23,6 @@ jobs:
           username: ${{ secrets.USERNAME }}
           port: ${{ secrets.PORT }}
           key: ${{ secrets.KEY }}
-          source: "test/a.txt"
-          target: "/home/ubuntu/test"
+          source: "test/*.txt,!test/a.txt"
+          target: "test"
     
