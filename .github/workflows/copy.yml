@@ -12,7 +12,7 @@ jobs:
       - name: Deploy in EC2
         env:
             PRIVATE_KEY: ${{ secrets.KEY  }}
-            HOSTNAME : ${{ secrets.host  }}
+            HOSTNAME : ${{ secrets.HOST  }}
             USER_NAME : ${{ secrets.USERNAME  }}
             SOURCEDIR : "test"
         run: |
