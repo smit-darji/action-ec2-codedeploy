@@ -30,10 +30,15 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
-          script: |
-            ls
-            cd test1
+          script: |            
             echo "Run python file"
-            pip install tabpy-client
+            for py_file in $(find $test1 -name *.py)
+              do
+                  python3 $py_file
+              done
+            echo "----------"
+            cd test1
             python3 ML.py
+
+
 
