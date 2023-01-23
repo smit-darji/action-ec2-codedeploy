@@ -1,18 +1,26 @@
-name: scp files
-on: [push]
-jobs:
+name: Push-to-EC2
 
-  build:
-    name: Build
+# Trigger deployment only on push to master branch
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Deploy to EC2 on master branch push
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@master
-    - name: copy file via ssh key
-      uses: appleboy/scp-action@master
-      with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        port: ${{ secrets.PORT }}
-        key: ${{ secrets.KEY }}
-        source: "action-ec2-codedeploy/test/a.txt"
-        target: "/home/ubuntu/test"
+      - name: Checkout the files
+        uses: actions/checkout@v2
+
+      - name: Deploy to Server 1
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.KEY }}
+          REMOTE_HOST: ${{ secrets.HOST }}
+          REMOTE_USER: ${{ secrets.USERNAME }}
+          TARGET: "/home/ubuntu/test"
+          SOURCE: "action-ec2-codedeploy/test/a.txt"
+
