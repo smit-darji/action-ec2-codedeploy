@@ -20,6 +20,5 @@ jobs:
           scp -o StrictHostKeyChecking=no -i key.pem -r ${SOURCEDIR} ubuntu@${HOSTNAME}:/home/ubuntu/test1/
           sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME} 
           echo "----"
-          apt list --upgradable
-          cd /home/ubuntu/
+          ls
 
