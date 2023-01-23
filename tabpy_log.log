@@ -1,0 +1,782 @@
+2023-01-23,15:40:03 [INFO] (app.py:app:244): Parsing config file /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/app/../common/default.conf
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter port set to "9004" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter server_version set to "2.5.0" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter evaluate_enabled set to "True" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter evaluate_timeout set to "30" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter upload_dir set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tmp/query_objects" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter transfer_protocol set to "http" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:212): Parameter certificate_file is not set
+2023-01-23,15:40:03 [DEBUG] (app.py:app:212): Parameter key_file is not set
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter state_file_path set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter static_path set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/static" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:212): Parameter TABPY_PWD_FILE is not set
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter log_request_context set to "false" from default value
+2023-01-23,15:40:03 [DEBUG] (app.py:app:205): Parameter max_request_size_in_mb set to "100" from default value
+2023-01-23,15:40:03 [INFO] (app.py:app:436): Loading state from state file /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/state.ini
+2023-01-23,15:40:03 [DEBUG] (app.py:app:313): Static pages folder set to "/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/static"
+2023-01-23,15:40:03 [INFO] (app.py:app:332): Password file is not specified: Authentication is not enabled
+2023-01-23,15:40:03 [INFO] (app.py:app:347): Call context logging is disabled
+2023-01-23,15:40:03 [INFO] (app.py:app:125): Initializing TabPy...
+2023-01-23,15:40:03 [DEBUG] (selector_events.py:selector_events:54): Using selector: EpollSelector
+2023-01-23,15:40:03 [INFO] (callbacks.py:callbacks:43): Initializing TabPy Server...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:03 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468344, "schema": null}'
+2023-01-23,15:40:03 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:03 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468344, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:03 [INFO] (app.py:app:129): Done initializing TabPy.
+2023-01-23,15:40:03 [INFO] (app.py:app:83): Setting max request size to 104857600 bytes
+2023-01-23,15:40:03 [INFO] (callbacks.py:callbacks:64): Initializing models...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:03 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468344, "schema": null}'
+2023-01-23,15:40:03 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:03 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:03 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468344, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:03 [INFO] (callbacks.py:callbacks:75): Load endpoint: pcc, version: 2, type: model
+2023-01-23,15:40:03 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:40:03 [INFO] (python_service.py:python_service:89): Loading object:, URI=pcc, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/2, version=2, is_updated=False
+2023-01-23,15:40:03 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='pcc', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/2', version=2, is_update=False, endpoint_type='model')
+2023-01-23,15:40:03 [INFO] (app.py:app:106): Web service listening on port 9004
+2023-01-23,15:40:03 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468344, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468344, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 GET /endpoints (127.0.0.1) 14.25ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 GET /configurations/endpoint_upload_destination (127.0.0.1) 5.37ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Processing PUT for /endpoints/pcc
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468344, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468344, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Endpoint info: {'description': 'correlation coefficient is extracted of x and y', 'required_files': [], 'type': 'model', 'version': 3, 'required_packages': [], 'dependencies': [], 'name': 'pcc', 'methods': [{'method': 'query'}], 'src_path': '/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/staging/endpoints/pcc/3'}
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model pcc...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468344, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468344, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468344, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468344, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:40:21 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:40:21 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:40:21 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='pcc', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/3', version=3, is_update=True, endpoint_type='model')
+2023-01-23,15:40:21 [INFO] (python_service.py:python_service:89): Loading object:, URI=pcc, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/3, version=3, is_updated=True
+2023-01-23,15:40:21 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2023-01-23,15:40:21 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 3, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:40:21 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 PUT /endpoints/pcc (127.0.0.1) 20.50ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Found models: {'pcc': {'version': 3, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 GET /status (127.0.0.1) 2.52ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 GET /endpoints (127.0.0.1) 3.32ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 GET /configurations/endpoint_upload_destination (127.0.0.1) 1.30ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Adding endpoint "clustering"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model clustering...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:40:21 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:40:21 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:40:21 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:40:21 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:40:21 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:40:21 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:40:21 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:40:21 [INFO] (python_service.py:python_service:89): Loading object:, URI=clustering, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/clustering/1, version=1, is_updated=False
+2023-01-23,15:40:21 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='clustering', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/clustering/1', version=1, is_update=False, endpoint_type='model')
+2023-01-23,15:40:21 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:40:21 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 3, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}, 'clustering': {'version': 1, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:40:21 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Endpoint clustering successfully added
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:40:21 [DEBUG] (state.py:state:148): Collected endpoints: {'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 201 POST /endpoints (127.0.0.1) 19.18ms
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:40:21 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:40:21 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:40:21 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:40:21 [DEBUG] (base_handler.py:base_handler:115): Found models: {'pcc': {'version': 3, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}, 'clustering': {'version': 1, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2023-01-23,15:40:21 [INFO] (web.py:web:2271): 200 GET /status (127.0.0.1) 2.39ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 GET /endpoints (127.0.0.1) 4.57ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 GET /configurations/endpoint_upload_destination (127.0.0.1) 3.15ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Processing PUT for /endpoints/pcc
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Endpoint info: {'name': 'pcc', 'version': 4, 'required_packages': [], 'description': 'correlation coefficient is extracted of x and y', 'required_files': [], 'dependencies': [], 'type': 'model', 'methods': [{'method': 'query'}], 'src_path': '/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/staging/endpoints/pcc/4'}
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model pcc...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='pcc', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/4', version=4, is_update=True, endpoint_type='model')
+2023-01-23,15:42:41 [INFO] (python_service.py:python_service:89): Loading object:, URI=pcc, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/4, version=4, is_updated=True
+2023-01-23,15:42:41 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2023-01-23,15:42:41 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 4, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}, 'clustering': {'version': 1, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:42:41 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 PUT /endpoints/pcc (127.0.0.1) 29.25ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Found models: {'pcc': {'version': 4, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}, 'clustering': {'version': 1, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 GET /status (127.0.0.1) 16.12ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 GET /endpoints (127.0.0.1) 4.54ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 GET /configurations/endpoint_upload_destination (127.0.0.1) 1.51ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Processing PUT for /endpoints/clustering
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Endpoint info: {'version': 2, 'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'dependencies': [], 'required_files': [], 'src_path': '/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/staging/endpoints/clustering/2', 'methods': [{'method': 'query'}], 'name': 'clustering', 'required_packages': []}
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model clustering...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 1, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468621, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 1, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468621, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:42:41 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='clustering', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/clustering/2', version=2, is_update=True, endpoint_type='model')
+2023-01-23,15:42:41 [INFO] (python_service.py:python_service:89): Loading object:, URI=clustering, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/clustering/2, version=2, is_updated=True
+2023-01-23,15:42:41 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:42:41 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:42:41 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 4, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}, 'clustering': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:42:41 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:42:41 [DEBUG] (state.py:state:148): Collected endpoints: {'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 PUT /endpoints/clustering (127.0.0.1) 25.71ms
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:42:41 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:42:41 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:42:41 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:42:41 [DEBUG] (base_handler.py:base_handler:115): Found models: {'pcc': {'version': 4, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}, 'clustering': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2023-01-23,15:42:41 [INFO] (web.py:web:2271): 200 GET /status (127.0.0.1) 7.23ms
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:54 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:54 [INFO] (web.py:web:2271): 200 GET /endpoints (127.0.0.1) 6.35ms
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:54 [INFO] (web.py:web:2271): 200 GET /configurations/endpoint_upload_destination (127.0.0.1) 3.91ms
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Processing PUT for /endpoints/pcc
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Endpoint info: {'required_packages': [], 'src_path': '/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/staging/endpoints/pcc/5', 'required_files': [], 'name': 'pcc', 'dependencies': [], 'version': 5, 'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'methods': [{'method': 'query'}]}
+2023-01-23,15:45:54 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model pcc...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 4, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 4, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:54 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:54 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:54 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:54 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:54 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:54 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:54 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:54 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:54 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:54 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:54 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:54 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:45:54 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='pcc', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/5', version=5, is_update=True, endpoint_type='model')
+2023-01-23,15:45:54 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2023-01-23,15:45:54 [INFO] (python_service.py:python_service:89): Loading object:, URI=pcc, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/pcc/5, version=5, is_updated=True
+2023-01-23,15:45:54 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:45:54 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 4, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}, 'clustering': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:45:54 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 5, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}, 'clustering': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:45:55 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [INFO] (web.py:web:2271): 200 PUT /endpoints/pcc (127.0.0.1) 132.00ms
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:55 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Found models: {'pcc': {'version': 5, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}, 'clustering': {'version': 2, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2023-01-23,15:45:55 [INFO] (web.py:web:2271): 200 GET /status (127.0.0.1) 2.47ms
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:55 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [INFO] (web.py:web:2271): 200 GET /endpoints (127.0.0.1) 3.82ms
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:55 [INFO] (web.py:web:2271): 200 GET /configurations/endpoint_upload_destination (127.0.0.1) 1.42ms
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Processing PUT for /endpoints/clustering
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Endpoint info: {'dependencies': [], 'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'required_packages': [], 'name': 'clustering', 'methods': [{'method': 'query'}], 'src_path': '/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/staging/endpoints/clustering/3', 'required_files': [], 'version': 3, 'type': 'model'}
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Adding/updating model clustering...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 2, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468761, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 2, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468761, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:55 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:55 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:55 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:55 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:55 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:55 [INFO] (state.py:state:642): Writing state to config
+2023-01-23,15:45:55 [DEBUG] (util.py:util:19): State path is /home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Loading state from state file
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468955, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468955, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'None' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '['pcc', 'clustering']'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "correlation coefficient is extracted of x and y", "type": "model", "version": 5, "dependencies": [], "target": null, "creation_time": 1674210927, "last_modified_time": 1674468954, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'pcc' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468955, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'pcc': {'description': 'correlation coefficient is extracted of x and y', 'type': 'model', 'version': 5, 'dependencies': [], 'target': None, 'creation_time': 1674210927, 'last_modified_time': 1674468954, 'schema': None, 'docstring': '-- no docstring found in query function --'}, 'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468955, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:39): Received request LoadObject
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:53): Returning response LoadInProgress(uri='clustering', path='/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/clustering/3', version=3, is_update=True, endpoint_type='model')
+2023-01-23,15:45:55 [INFO] (python_service.py:python_service:89): Loading object:, URI=clustering, URL=/home/dev1035/.local/lib/python3.10/site-packages/tabpy/tabpy_server/query_objects/clustering/3, version=3, is_updated=True
+2023-01-23,15:45:55 [INFO] (callbacks.py:callbacks:24): Waiting for object to be loaded...
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 5, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}, 'clustering': {'version': 2, 'type': 'model', 'status': 'LoadInProgress', 'reason': None}})
+2023-01-23,15:45:55 [INFO] (query_object.py:query_object:80): Loaded query object "CustomQueryObject" successfully
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:39): Received request ListObjects
+2023-01-23,15:45:55 [DEBUG] (python_service.py:python_service:53): Returning response ObjectList(objects={'pcc': {'version': 5, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}, 'clustering': {'version': 3, 'type': 'model', 'status': 'LoadSuccessful', 'reason': None}})
+2023-01-23,15:45:55 [INFO] (callbacks.py:callbacks:35): Object load status: LoadSuccessful
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Service Versions]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '{"description": "Returns cluster Ids for each data point specified by the pairs in x and y", "type": "model", "version": 3, "dependencies": [], "target": null, "creation_time": 1674468621, "last_modified_time": 1674468955, "schema": null}'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'clustering' from section [Query Objects Docstrings]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value '-- no docstring found in query function --'
+2023-01-23,15:45:55 [DEBUG] (state.py:state:148): Collected endpoints: {'clustering': {'description': 'Returns cluster Ids for each data point specified by the pairs in x and y', 'type': 'model', 'version': 3, 'dependencies': [], 'target': None, 'creation_time': 1674468621, 'last_modified_time': 1674468955, 'schema': None, 'docstring': '-- no docstring found in query function --'}}
+2023-01-23,15:45:55 [INFO] (web.py:web:2271): 200 PUT /endpoints/clustering (127.0.0.1) 127.49ms
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking if need to handle authentication
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Handling authentication
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authentication is not a required feature for API "v1"
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Checking request headers for authentication data
+2023-01-23,15:45:55 [INFO] (base_handler.py:base_handler:115): Authorization header not found
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): authentication not required, username and password are none
+2023-01-23,15:45:55 [DEBUG] (state.py:state:511): Collecting Access-Control-Allow-Origin from state file ...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Origin' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Headers' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (state.py:state:613): Loading option 'Access-Control-Allow-Methods' from section [Service Info]...
+2023-01-23,15:45:55 [DEBUG] (state.py:state:635): Returning value ''
+2023-01-23,15:45:55 [DEBUG] (base_handler.py:base_handler:115): Found models: {'pcc': {'version': 5, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}, 'clustering': {'version': 3, 'type': 'model', 'status': 'LoadSuccessful', 'last_error': None}}
+2023-01-23,15:45:55 [INFO] (web.py:web:2271): 200 GET /status (127.0.0.1) 2.44ms

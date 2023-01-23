@@ -32,13 +32,8 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |            
             echo "Run python file"
-            for py_file in $(find $test1 -name *.py)
-              do
-                  python3 $py_file
-              done
-            echo "----------"
-            cd test1
-            python3 ML.py
-
-
+            for py_file in $(find test1 -name *.py)
+            do
+                python3 $py_file
+            done
 
