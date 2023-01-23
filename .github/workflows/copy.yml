@@ -19,4 +19,3 @@ jobs:
           sudo chmod 400 key.pem
           sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME} 
           echo "----------"
-          scp -o StrictHostKeyChecking=no -i key.pem -r {SOURCEDIR} ubuntu@${{secrets.AWS_DNS}}:/home/ubuntu/test/
