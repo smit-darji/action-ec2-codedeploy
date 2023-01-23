@@ -18,9 +18,9 @@ jobs:
           echo "$PRIVATE_KEY" > key.pem 
           sudo chmod 400 key.pem
           scp -o StrictHostKeyChecking=no -i key.pem -r ${SOURCEDIR} ubuntu@${HOSTNAME}:/home/ubuntu/test1/
-          sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME}
+          sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME} & cd test1/
           ls
           echo "-------------"
-          cd /home/ubuntu/test1/
+          cd test1/
           python a.py
 
