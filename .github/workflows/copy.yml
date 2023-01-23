@@ -13,9 +13,12 @@ jobs:
         env:
             PRIVATE_KEY: ${{ secrets.KEY  }}
             HOSTNAME : ${{ secrets.HOST  }}
-            SOURCEDIR : "test/"
+            SOURCEDIR : "test/a.py"
         run: |
           echo "$PRIVATE_KEY" > key.pem 
           sudo chmod 400 key.pem
+          scp -o StrictHostKeyChecking=no -i key.pem -r ${SOURCEDIR} ubuntu@${HOSTNAME}:/home/ubuntu/test1/
           sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME}
-          scp -o StrictHostKeyChecking=no -i key.pem -r ${SOURCEDIR} ubuntu@${HOSTNAME}:/home/ubuntu/test/
+          cd /home/ubuntu/test1/
+          python a.py
+
