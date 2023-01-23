@@ -16,4 +16,13 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          port: ${{ secrets.PORT }}
+          key: ${{ secrets.KEY }}
+          source: "test/a.txt"
+          target: "/home/ubuntu/test"
     
