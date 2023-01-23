@@ -4,7 +4,7 @@ name: Push-to-EC2
 on: push
 
 jobs:
-  copy:
+  Copy_file:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,6 +20,10 @@ jobs:
           sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME} 
           echo "----"
           ls
+  Run_python:
+    runs-on: ubuntu-latest
+    needs: Copy_file
+    steps:
       - name: multiple command
         uses: appleboy/ssh-action@v0.1.7
         with:
@@ -29,3 +33,6 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             ls
+            cd test1
+            echo "Run python file"
+            python a.py
