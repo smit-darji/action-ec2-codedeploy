@@ -19,6 +19,8 @@ jobs:
           sudo chmod 400 key.pem
           scp -o StrictHostKeyChecking=no -i key.pem -r ${SOURCEDIR} ubuntu@${HOSTNAME}:/home/ubuntu/test1/
           sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME}
+          ls
+          echo "-------------"
           cd /home/ubuntu/test1/
           python a.py
 
