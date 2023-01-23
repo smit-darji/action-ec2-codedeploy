@@ -1,19 +1,18 @@
 name: Push-to-EC2
 
 # Trigger deployment only on push to master branch
-on:
-  push
+on: push
 
 jobs:
   copy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 
+      - uses: actions/checkout@v2
       - name: Deploy in EC2
         env:
-            PRIVATE_KEY: ${{ secrets.KEY  }}
-            HOSTNAME : ${{ secrets.HOST  }}
-            SOURCEDIR : "test/a.py"
+          PRIVATE_KEY: ${{ secrets.KEY  }}
+          HOSTNAME: ${{ secrets.HOST  }}
+          SOURCEDIR: "test/a.py"
         run: |
           echo "$PRIVATE_KEY" > key.pem 
           sudo chmod 400 key.pem
@@ -21,4 +20,12 @@ jobs:
           sudo ssh -o StrictHostKeyChecking=no -i key.pem ubuntu@${HOSTNAME} 
           echo "----"
           ls
-
+      - name: multiple command
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            ls
